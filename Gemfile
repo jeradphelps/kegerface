@@ -21,3 +21,5 @@ gem 'haml-rails'
 group :development do
   gem 'pry-rails'
 end
+
+gem 'activeadmin', github: 'gregbell/active_admin'
