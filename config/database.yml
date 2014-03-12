@@ -19,3 +19,4 @@ production:
   password: ooMT2PSdrb50od3Ip8Kspaa7md
   host: ec2-54-204-27-119.compute-1.amazonaws.com
   port: 5432
+  
