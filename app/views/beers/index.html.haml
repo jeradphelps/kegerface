@@ -22,61 +22,17 @@
         %td.beer-pic
           = image_tag "SRM #{beer.srm}.png", :height => "150"
         %td.beer-style
+          %h1= beer.name
           %h2= beer.style
-          blah blah blah blah blah blah blah blah blah blah
+          blah blah add a description here
         %td.beer-info
-          %h2 ABV
+          %h2= "#{beer.abv}% ABV"
+          %h2= "#{beer.ibu}% IBU"
           = image_tag "2 Hops.png", :width => "200px"
         %td.beer-status{ :style => "border-right: none;" }
           = image_tag "kegs/0.png", :width => "80px"
         
-
-
-
-
-
-
-
-
-
-/ #TitleBarBack
-/ #TitleBarBeerPic
-/ #TitleBarBeerName
-/   NAME
-/ #TitleBarInfo
-/   INFO
-/ #TitleBarKeg
-/   STATUS
-
-/ - @beers.each do |beer|
-/   .content-row{:style => "border: 1px solid pink"}
-/     .beer-pic{:style => "border: 1px solid green"}
-/       = image_tag "SRM #{beer.srm}.png", :height => "150"
-/     / %div{:style => "border: 1px solid yellow"}
-/     /   %h2= beer.style
-/     .beer-style
-/       %h2= beer.style
-/       blah blah blah blah blah blah blah blah blah blah
-/     .beer-info{:style => "border: 1px solid blue"}
-/       %h2 ABV
-/       = image_tag "2 Hops.png", :width => "200px"
-/     .beer-status
-/       = image_tag "kegs/0.png", :width => "80px"
-
 #footer
   Jason & Kevin Phelps
 
-/ / %span
-/ / overlay divs for links to recipes
-/ %a{href: "<?php echo $tap1fB; ?>", target: "_blank"}
-/   #links1
-/ %a{href: "<?php echo $tap2fB; ?>", target: "_blank"}
-/   #links2
-/ %a{href: "<?php echo $tap3fB; ?>", target: "_blank"}
-/   #links3
-/ %a{href: "<?php echo $tap4fB; ?>", target: "_blank"}
-/   #links4
-/ %a{href: "<?php echo $tap5fB; ?>", target: "_blank"}
-/   #links5
-/ %a{href: "<?php echo $tap6fB; ?>", target: "_blank"}
-/   #links6
+
