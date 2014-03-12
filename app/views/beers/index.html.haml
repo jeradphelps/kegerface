@@ -20,7 +20,7 @@
     - @beers.each_with_index do |beer, index|
       %tr{ :class => index % 2 == 0 ? "dark" : "light"}
         %td.beer-pic
-          = image_tag "SRM #{beer.srm}.png", :height => "150"
+          = get_srm_image beer
         %td.beer-style
           %h1= beer.name
           %h2= beer.style
@@ -28,9 +28,9 @@
         %td.beer-info
           %h2= "#{beer.abv}% ABV"
           %h2= "#{beer.ibu}% IBU"
-          = image_tag "2 Hops.png", :width => "200px"
+          = get_hop_image beer
         %td.beer-status{ :style => "border-right: none;" }
-          = image_tag "kegs/0.png", :width => "80px"
+          = get_status_image beer
         
 #footer
   Jason & Kevin Phelps
