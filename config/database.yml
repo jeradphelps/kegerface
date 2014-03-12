@@ -9,3 +9,13 @@ test:
   encoding: unicode
   database: kegerface_test
   pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: d1tb815id8v30c
+  username: nyacxyyonwoher
+  password: ooMT2PSdrb50od3Ip8Kspaa7md
+  host: ec2-54-204-27-119.compute-1.amazonaws.com
+  port: 5432
