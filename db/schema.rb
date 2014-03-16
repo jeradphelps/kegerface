@@ -59,8 +59,8 @@ ActiveRecord::Schema.define(version: 20140316152848) do
     t.boolean  "published_flag"
     t.integer  "order_number"
     t.float    "abv"
-    t.float    "ibu"
-    t.float    "srm"
+    t.integer  "ibu"
+    t.integer  "srm"
   end
 
 end

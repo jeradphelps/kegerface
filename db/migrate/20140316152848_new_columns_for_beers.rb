@@ -9,10 +9,10 @@ class NewColumnsForBeers < ActiveRecord::Migration
     add_column :beers, :abv, :float
 
     remove_column :beers, :ibu
-    add_column :beers, :ibu, :float
+    add_column :beers, :ibu, :integer
 
     remove_column :beers, :srm
-    add_column :beers, :srm, :float
+    add_column :beers, :srm, :integer
   end
 
   def down
