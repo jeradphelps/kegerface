@@ -1,11 +1,10 @@
 
 #header
-  #headerboxa
-    = nice_date DateTime.now
-  #headerboxa
-    = image_tag 'blank.png', :height => "100"
-  #headerboxb
-    %h1 BEERS ON TAP
+  %h1 
+    BEERS ON TAP
+    %small
+      %br
+      = nice_date DateTime.now
 %br
 
 %table.beers-table
@@ -14,7 +13,7 @@
       %th
       %th NAME
       %th INFO
-      %th{ :style => "border-right: none;" } STATUS
+      %th STATUS
 
   %tbody
     - @beers.each_with_index do |beer, index|
@@ -27,9 +26,9 @@
           blah blah add a description here
         %td.beer-info
           %h2= "#{beer.abv}% ABV"
-          %h2= "#{beer.ibu}% IBU"
+          %h2= "#{beer.ibu} IBU"
           = get_hop_image beer
-        %td.beer-status{ :style => "border-right: none;" }
+        %td.beer-status
           = get_status_image beer
         
 #footer

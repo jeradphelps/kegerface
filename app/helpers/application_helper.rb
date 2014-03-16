@@ -3,13 +3,6 @@ module ApplicationHelper
     date_time.strftime("%m/%d/%Y")
   end
 
-
-
-
-
-
-
-
   # Image Helpers
   def get_srm_image beer
     [40,36,30,25,20,15,10,5,1].each do |srm_image_nbr|

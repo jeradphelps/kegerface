@@ -1,25 +1,29 @@
+$content-width: 960px;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 body {
-  background-image: image-url('background.jpg');
+  background: image-url('background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #header {
-  width: 100%;
+  width: $content-width;
   height: 100px;
   margin-top: 40px;
-}
-#headerboxb {
-  width:342px;
-  text-align:center;
-  float: left;
-}
-#headerboxa {
-  padding-left: 30px;
-  width: 141px;
-  float: left;
-  font: 1.3em Georgia;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    small {
+      color: white;
+      font-size: 24px;
+      font-family: Georgia;
+    }
+  }
 }
 h1 {
   color: white;
@@ -30,10 +34,15 @@ h1 {
 table.beers-table
 {
   color: white;
-  width: 100%;
+  width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
 
   thead {
-    border-bottom: 1px white dashed;
+    tr {
+      // border-bottom: 1px white dashed;
+      // border: 1px solid pink;
+    }
   }
 
   tr.dark {
@@ -45,7 +54,7 @@ table.beers-table
   }
 
   th, td {
-    border-right: 1px dashed white;
+    // border-right: 1px dashed white;
     padding: 20px;
   }
 }

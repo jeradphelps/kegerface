@@ -1,31 +1,31 @@
 
-Beer.find_or_create_by_name(
+Beer.create(
   name: "Bells Two Hearted",
   style: "IPA",
   brewery: "Bells",
   abv: "5.7",
   ibu: "25",
-  srm: "25",
-  status: "status of the beer.  What is this?"
+  srm: "1",
+  status: "75"
 )
 
-Beer.find_or_create_by_name(
+Beer.create(
   name: "Keveviezen",
   style: "Hefe",
   brewery: "Oak Hill South",
   abv: "5.7",
-  ibu: "25",
-  srm: "25",
-  status: "status of the beer.  What is this?"
+  ibu: "29",
+  srm: "20",
+  status: "50"
 )
 
-Beer.find_or_create_by_name(
+Beer.create(
   name: "Juice of the devil",
   style: "Kolsch",
   brewery: "Oak Hill South",
   abv: "5.7",
-  ibu: "25",
-  srm: "25",
-  status: "status of the beer.  What is this?"
+  ibu: "100",
+  srm: "99",
+  status: "10"
 )
 
