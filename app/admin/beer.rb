@@ -12,6 +12,7 @@ ActiveAdmin.register Beer do
   form do |f|
     f.inputs "Beer Details" do
       f.input :name
+      f.input :style
       f.input :description
       f.input :abv, :hint => "A decimal number."
       f.input :ibu, :hint => "An integer."
